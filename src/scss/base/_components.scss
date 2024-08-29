@@ -1,0 +1,28 @@
+.button {
+	width: 335px;
+	padding: 16px;
+	background-color: $pacific-blue;
+	font: {
+		weight: 600;
+		size: 20px;
+	}
+	color: $white;
+	border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &:active {
+        opacity: .8;
+        background-color: $cerulean;
+    }
+
+    &:disabled {
+        opacity: .8;
+        background-color: $heather;
+    }
+}
