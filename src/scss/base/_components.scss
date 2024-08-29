@@ -11,6 +11,8 @@
     border: none;
     cursor: pointer;
     transition: .3s;
+    text-transform: uppercase;
+    text-align: center;
 
     &:hover {
         opacity: .8;

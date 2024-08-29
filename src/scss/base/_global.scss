@@ -1,0 +1,21 @@
+body {
+    font: {
+        family: $SFProText;
+        weight: 400;
+        size: 26px;
+    }
+    color: $swamp;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

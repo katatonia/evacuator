@@ -1,0 +1,12 @@
+.hover {
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.active {
+    &:active {
+        opacity: .8;
+        color: $cerulean;
+    }
+}
