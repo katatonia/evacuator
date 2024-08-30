@@ -1,0 +1,15 @@
+.faq {
+    background-color: $white;
+    padding: 100px 0;
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__answer {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        font-size: 1rem;
+    }
+}
