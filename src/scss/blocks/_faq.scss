@@ -1,15 +1,23 @@
 .faq {
-    background-color: $white;
-    padding: 100px 0;
+	background-color: $white;
+	padding: 100px 0;
 
-    &__title {
-        margin-bottom: 48px;
-    }
+	&__title {
+		margin-bottom: 48px;
+	}
 
-    &__answer {
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-        font-size: 1rem;
-    }
+	&__wrapper {
+        display: grid;
+        gap: 39px;
+        grid-template-columns: 1fr 1fr;
+	}
+
+	&__answer {
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+		font-size: 1rem;
+        margin-top: 48px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	}
 }
