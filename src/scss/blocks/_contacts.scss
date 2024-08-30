@@ -3,7 +3,7 @@
 	padding-bottom: 80px;
 
 	&__banner {
-		background: url("../../img/banner.png") no-repeat 0;
+		background: url("../img/banner.png") no-repeat 0;
 		background-size: cover;
 		font: {
 			size: 50px;
@@ -42,12 +42,12 @@
 		text-transform: uppercase;
 
 		&_left {
-			background: url('../../icons/arrow.svg') no-repeat center;
+			background: url('../icons/arrow.svg') no-repeat center;
 			transform: scaleX(-1)
 		}
 
 		&_right {
-			background: url('../../icons/arrow.svg') no-repeat center;
+			background: url('../icons/arrow.svg') no-repeat center;
 		}
 
 		&_active {
