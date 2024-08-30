@@ -1,0 +1,83 @@
+.calculation {
+    background-color: $solitude;
+    padding: 100px;
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__desc {
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        margin-bottom: 64px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        padding-top: 50px;
+        z-index: 1;
+        position: relative;
+    }
+
+    &__list-item {
+        background-color: $pacific-blue;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        color: $white;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: 27%;
+            width: 149px;
+            height: 149px;
+            background-color: $pacific-blue;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 80px;
+            height: 80px;
+            top: -60px;
+            right: 123px;
+        }
+
+        &_gear::after {
+            background: url('../icons/gear.svg') no-repeat;
+        }
+
+        &_mileage::after {
+            background: url('../icons/mileage.svg') no-repeat;
+        }
+
+        &_lifting-capacity::after {
+            background: url('../icons/lifting-capacity.svg') no-repeat;
+        }
+
+        &_tools::after {
+            background: url('../icons/tools.svg') no-repeat;
+        }
+    }
+
+    &__list-title {
+        font: {
+            size: 0.7692rem;
+            font-weight: 700;
+        }
+        margin-bottom: 17px;
+    }
+
+    &__list-text {
+        font-size: 0.6923rem;
+    }
+}
