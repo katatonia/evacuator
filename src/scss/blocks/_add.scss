@@ -1,0 +1,26 @@
+.add {
+    background: url("../img/banner.png") no-repeat 0;
+    background-size: cover;
+
+    &__wrapper {
+        position: relative;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        padding: 43px 0 40px;
+
+        &::before {
+            content: '';
+            width: 210px;
+            height: 121px;
+            position: absolute;
+            top: 0;
+            background: url('../icons/car-carrier.svg') no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__title {
+        padding-left: 210px;
+    }
+}
