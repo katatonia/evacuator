@@ -1,6 +1,8 @@
 .features {
+    position: relative;
+
     &__wrapper {
-        padding: 100px 0 0;
+        padding: 100px 0 330px;
     }
 
     &__title {
@@ -26,7 +28,6 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        margin-bottom: 100px;
     }
 
     &__list-item {
@@ -54,8 +55,12 @@
 
     &__info {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(684px, 1fr));
         gap: 32px;
+        position: absolute;
+        bottom: -380px;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     &__info-block {
