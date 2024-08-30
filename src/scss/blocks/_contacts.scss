@@ -1,0 +1,62 @@
+.contacts {
+	background-color: $white-smoke;
+	padding-bottom: 80px;
+
+	&__banner {
+		background: url("../../img/banner.png") no-repeat 0;
+		background-size: cover;
+		font: {
+			size: 50px;
+			weight: 700;
+		}
+		color: $white;
+		padding: 36px 0 45px;
+		text-align: center;
+
+		span {
+			color: $maya-blue;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+
+	&__pagination {
+		display: flex;
+		gap: 18px;
+		justify-content: center;
+	}
+
+	&__pagination-btn {
+		width: 52px;
+		height: 52px;
+		text-align: center;
+		border: 1px solid $pacific-blue;
+		border-radius: 6px;
+		padding: 10px;
+		color: $pacific-blue;
+		cursor: pointer;
+		font: {
+			size: 26px;
+			weight: 700;
+		}
+		text-transform: uppercase;
+
+		&_left {
+			background: url('../../icons/arrow.svg') no-repeat center;
+			transform: scaleX(-1)
+		}
+
+		&_right {
+			background: url('../../icons/arrow.svg') no-repeat center;
+		}
+
+		&_active {
+			background-color: $pacific-blue;
+			color: $white;
+		}
+
+		&_hidden {
+			display: none;
+		}
+	}
+}

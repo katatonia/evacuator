@@ -8,14 +8,14 @@ body {
 }
 
 .page {
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .container {
-    max-width: 1760px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }

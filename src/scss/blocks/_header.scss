@@ -2,11 +2,13 @@
     background-color: $white;
 
     &__wrapper {
+        max-width: 1760px;
+        margin: 0 auto;
         position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 21.5px 0;
+        padding: 21.5px 20px;
         align-items: center;
     }
 }
