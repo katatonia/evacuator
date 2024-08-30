@@ -1,0 +1,71 @@
+.features {
+    &__wrapper {
+        padding: 100px 0 0;
+    }
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__desc {
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 34px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 100px;
+    }
+
+    &__list-item {
+        position: relative;
+        padding-left: 45px;
+        display: flex;
+        align-items: center;
+        cursor: default;
+
+        &::before {
+            content: '';
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            left: 0;
+            background: url('../icons/counter-done.svg') no-repeat;
+        }
+    }
+
+    &__img img {
+        max-width: 630px;
+        height: 645px;
+        object-fit: contain;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    &__info-block {
+        background-color: $china-ivory;
+        padding: 48px;
+        border-radius: 20px;
+    }
+
+    &__info-title {
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+}
