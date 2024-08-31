@@ -27,12 +27,6 @@
 	}
 
 	&__pagination-btn {
-		width: 52px;
-		height: 52px;
-		text-align: center;
-		border: 1px solid $pacific-blue;
-		border-radius: 6px;
-		padding: 10px;
 		color: $pacific-blue;
 		cursor: pointer;
 		font: {
@@ -40,15 +34,6 @@
 			weight: 700;
 		}
 		text-transform: uppercase;
-
-		&_left {
-			background: url('../icons/arrow.svg') no-repeat center;
-			transform: scaleX(-1)
-		}
-
-		&_right {
-			background: url('../icons/arrow.svg') no-repeat center;
-		}
 
 		&_active {
 			background-color: $pacific-blue;

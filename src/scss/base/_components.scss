@@ -35,3 +35,21 @@
         weight: 700;
     }
 }
+
+.arrow {
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    border: 1px solid $pacific-blue;
+    border-radius: 6px;
+    padding: 10px;
+
+    &_left {
+        background: url('../icons/arrow.svg') no-repeat center;
+        transform: scaleX(-1)
+    }
+
+    &_right {
+        background: url('../icons/arrow.svg') no-repeat center;
+    }
+}

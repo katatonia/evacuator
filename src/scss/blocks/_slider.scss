@@ -1,4 +1,85 @@
 .slider {
-    background-color: $solitude;
-    padding: 530px 100px;
+	background-color: $solitude;
+	padding: 530px 0 100px;
+	position: relative;
+
+	&__title {
+		margin-bottom: 48px;
+	}
+
+	&__desc {
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		font-weight: 600;
+		margin-bottom: 32px;
+	}
+
+	&__list {
+		display: grid;
+		gap: 32px;
+		grid-template-columns: repeat(4, minmax(684px, 1fr));
+		overflow: hidden;
+		margin-bottom: 32px;
+	}
+
+	&__list-item {
+		background-color: $white;
+		display: flex;
+		flex-direction: column;
+		padding: 40px;
+		border-radius: 20px;
+		gap: 20px;
+	}
+
+	&__list-title {
+		font: {
+			size: 0.7692rem;
+			weight: 700;
+		}
+	}
+
+	&__desc {
+		font-size: 0.7692rem;
+	}
+
+	&__img img {
+		max-width: 604px;
+		height: 322px;
+		object-fit: contain;
+	}
+
+	&__btn {
+		position: absolute;
+		top: 65%;
+		cursor: pointer;
+
+		&_left {
+			left: 100px;
+		}
+
+		&_right {
+			right: 100px;
+		}
+	}
+
+	&__pagination {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__pagination-item {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: $heather;
+
+		&_active {
+			background-color: $pacific-blue;
+		}
+
+	}
 }
