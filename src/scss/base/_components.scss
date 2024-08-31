@@ -1,10 +1,10 @@
 .button {
-	width: 335px;
+	max-width: 335px;
 	padding: 16px;
 	background-color: $pacific-blue;
 	font: {
 		weight: 600;
-		size: 20px;
+		size: 1rem;
 	}
 	color: $white;
 	border-radius: 50px;

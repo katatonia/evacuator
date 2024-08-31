@@ -1,21 +1,25 @@
 .info {
-    background-color: $china-ivory;
-    padding: 100px 0;
+	background-color: $china-ivory;
+	padding: 100px 0;
 
-    &__title {
-        margin-bottom: 48px;
-    }
+	&__title {
+		margin-bottom: 48px;
+	}
 
-    &__wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
 
-    &__block {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        align-items: center;
-    }
+		@media (max-width: 980px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		align-items: center;
+	}
 }

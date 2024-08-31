@@ -6,6 +6,14 @@ html, body {
     }
     color: $swamp;
     scroll-behavior: smooth;
+
+    @media (max-width: 1440px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 980px) {
+        font-size: 16px;
+    }
 }
 
 .page {
@@ -18,4 +26,12 @@ html, body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
+
+    @media (max-width: 1440px) {
+        max-width: 1380px;
+    }
+
+    @media (max-width: 980px) {
+        max-width: 940px;
+    }
 }

@@ -2,6 +2,11 @@
 	width: 112px;
 	height: 112px;
 
+	@media(max-width: 980px) {
+		width: 80px;
+		height: 80px;
+	}
+
 	a {
 		display: block;
 	}

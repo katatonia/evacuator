@@ -4,6 +4,14 @@
     gap: 78px;
     align-items: center;
 
+    @media (max-width: 1440px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 980px) {
+        justify-content: center;
+    }
+
     &__item {
         font-size: 0.7692rem;
         text-transform: uppercase;
@@ -12,6 +20,11 @@
         a {
             display: block;
             margin-left: 57px;
+
+            @media (max-width: 980px) {
+                margin: 0;
+                font-size: 12px;
+            }
         }
     }
 

@@ -2,13 +2,16 @@
     background-color: $white;
 
     &__wrapper {
-        max-width: 1760px;
-        margin: 0 auto;
         position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 21.5px 20px;
         align-items: center;
+
+        @media (max-width: 980px) {
+            justify-content: center;
+            gap: 50px;
+        }
     }
 }
