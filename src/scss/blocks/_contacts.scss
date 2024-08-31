@@ -34,6 +34,13 @@
 			weight: 700;
 		}
 		text-transform: uppercase;
+		border: 1px solid $pacific-blue;
+		width: 52px;
+		height: 52px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
 
 		&_active {
 			background-color: $pacific-blue;
@@ -42,6 +49,11 @@
 
 		&_hidden {
 			display: none;
+		}
+
+		&_right {
+			background: url('../icons/arrow.svg') no-repeat;
+			background-position: center;
 		}
 	}
 }

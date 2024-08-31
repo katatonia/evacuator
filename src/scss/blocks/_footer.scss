@@ -1,0 +1,23 @@
+.footer {
+    background-color: $pale-sky;
+    padding: 41px 0 87px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 63px;
+    }
+
+    &__menu-item {
+        color: $white;
+        font-size: 0.6153rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
