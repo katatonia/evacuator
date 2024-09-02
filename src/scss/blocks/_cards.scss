@@ -65,6 +65,16 @@
 		font-weight: 700;
 	}
 
+	&__block {
+		@media (max-width: 1440px) {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			width: 100%;
+			justify-content: center;
+		}
+	}
+
 	&__contacts {
 		max-width: 336px;
 
@@ -85,6 +95,8 @@
 	&__contacts-handset,
 	&__contacts-phone {
 		position: relative;
+		width: 100%;
+		max-width: 335px;
 
 		@media (max-width: 980px) {
 			width: 100%;
@@ -164,31 +176,32 @@
 	}
 
 	&__ad {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		border: 1px solid $pacific-blue;
 		border-radius: 50px;
 		padding: 16px 36px;
-        color: $pacific-blue;
-        cursor: pointer;
+		color: $pacific-blue;
+		cursor: pointer;
 	}
 
-    &__ad-id {
-        font: {
-            size: 0.4615rem;
-            font-weight: 500;
-        }
-        margin-bottom: 4px;
-        cursor: pointer;
-    }
+	&__ad-id {
+		font: {
+			size: 0.4615rem;
+			font-weight: 500;
+		}
+		margin-bottom: 4px;
+		cursor: pointer;
+	}
 
-    &__ad-order {
-        font-size: 0.6154rem;
-        text-decoration: underline;
-    }
+	&__ad-order {
+		font-size: 0.6154rem;
+		text-decoration: underline;
+	}
 
-	&__photo img{
+	&__photo img {
 		height: 100%;
 		object-fit: contain;
 	}

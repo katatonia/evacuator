@@ -6,7 +6,7 @@
 		padding: 50px 0 50px;
 	}
 
-	.wrapper-1760 {
+	&__wrapper {
 		position: relative;
 	}
 
@@ -73,11 +73,11 @@
 		cursor: pointer;
 
 		&_left {
-			left: 0;
+			left: -52px;
 		}
 
 		&_right {
-			right: 0;
+			right: -52px;
 		}
 
 		@media (max-width: 1440px) {
